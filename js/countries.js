@@ -12,15 +12,12 @@ var app = new Vue({
         .then((data) =>{
             this.countries = data;
         })
-        $(document).ready(function(){
-            $('#tab').dataTable({
-                "order": [[ 1, "asc" ]],
-            });
-        });
+        
     },
     template:`
     <div>
         <h1>Covid-19 APP</h1><br>
+        <button onclick="getTable()">Kliknij zeby działały ładne tabelki</button>
         <table id="tab" class="display">
             <thead>
                 <tr>
@@ -48,3 +45,11 @@ var app = new Vue({
     </div>
     `,
     });
+//funkcja która wstawia tabelkę z DataTables
+function getTable(){
+    $(document).ready(function(){
+        $('#tab').DataTable({
+            "order": [[ 1, "desc" ]],
+        });
+    });
+}
