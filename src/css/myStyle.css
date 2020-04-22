@@ -1,0 +1,16 @@
+.data {
+    font-size: 36px;
+    color: tomato;
+    font-weight: bold;
+    text-align: center;
+  }
+
+/*.bg {
+    background-color: rgb(56, 56, 56);
+}*/
+
+.dataText {
+    /*color: rgb(255, 255, 255);*/
+    text-align: center;
+}
+
